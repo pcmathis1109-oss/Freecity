@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free City - Demo Free Guy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hud">
+      <div>
+        <h1>Free City</h1>
+        <p>Une maquette 3D inspirée de l'ambiance Free Guy.</p>
+      </div>
+      <div class="hud__legend">
+        <div><span class="dot npc"></span> PNJ (lunettes)</div>
+        <div><span class="dot player"></span> Joueurs</div>
+      </div>
+    </header>
+    <main>
+      <canvas id="scene"></canvas>
+      <aside class="panel">
+        <h2>Configuration rapide</h2>
+        <label>
+          Densité de la ville
+          <input id="density" type="range" min="8" max="24" value="16" />
+        </label>
+        <label>
+          PNJ
+          <input id="npcCount" type="range" min="4" max="24" value="12" />
+        </label>
+        <label>
+          Joueurs
+          <input id="playerCount" type="range" min="1" max="8" value="3" />
+        </label>
+        <label>
+          Ton personnage
+          <select id="avatarStyle">
+            <option value="hero">Héros (Guy)</option>
+            <option value="speedster">Speedster</option>
+            <option value="street">Street</option>
+            <option value="tech">Tech</option>
+          </select>
+        </label>
+        <label class="toggle">
+          <input id="avatarGlasses" type="checkbox" />
+          Lunettes de soleil
+        </label>
+        <button id="regenerate" type="button">Reconstruire la ville</button>
+        <p class="tip">Astuce : utilisez la souris pour tourner autour de la scène.</p>
+        <div class="preview">
+          <h3>Aperçu visuel</h3>
+          <div class="preview__grid">
+            <figure>
+              <img src="./assets/city-preview.svg" alt="Aperçu de la ville Free City" />
+              <figcaption>Ville stylisée</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/npc-preview.svg" alt="Aperçu des PNJ avec lunettes" />
+              <figcaption>PNJ (lunettes)</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/player-preview.svg" alt="Aperçu du joueur personnalisable" />
+              <figcaption>Joueur</figcaption>
+            </figure>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
