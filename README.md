@@ -1,6 +1,6 @@
 # Freecity
 
-Maquette 3D inspirée de l'univers du film *Free Guy* : une ville stylisée, des PNJ avec lunettes et des joueurs distingués par leur couleur.
+Maquette 3D inspirée de l'univers du film *Free Guy* : une ville stylisée avec une ambiance GTA/Fortnite, des PNJ avec lunettes et des joueurs distingués par leur couleur.
 
 ## Démarrer
 
